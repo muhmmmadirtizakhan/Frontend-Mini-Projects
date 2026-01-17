@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #D66D75;
+    background: -webkit-linear-gradient(to right, #E29587, #D66D75);
+    background: linear-gradient(to right, #E29587, #D66D75);
+    color: white;
+    height: 100vh;
+    padding: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    gap: 15px;
+}
+
+.dealingwithleftside{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dealingwithrightside{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.code-box{
+    display: flex;
+    flex-direction: column;
+    height: 28vh;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.output-box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+textarea{
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    resize: none;
+    background-color: #202020;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+textarea:focus{
+    background-color: #2a2a2a;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    background-color: #333;
+    border: none;
+    outline: none;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    height: 30px;
+    padding: 0 10px;
+}
+
+label i{
+    margin: 0 10px;
+}
+
+.fa-brands, .fa-solid{
+    color: aquamarine;
+}
