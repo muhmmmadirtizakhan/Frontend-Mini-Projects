@@ -1,0 +1,97 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 100vh;
+    min-width: 100vw;
+    text-align: center;
+    font-family: monospace;
+    background: #2C3E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: rgba(0,0,0,0.3);
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #fbff00;
+}
+.time{
+    font-size: 3rem;
+    background: rgba(0,0,0,0.6);
+padding: 0.5rem 1rem;
+border-radius: 50px;
+margin-bottom: 1.5rem;
+box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+
+}
+.button-container{
+    display: flex;
+    gap: 1rem;
+
+}
+.button-container .start,
+.button-container .stop,
+.button-container .reset {
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 23px;
+  color: white;
+  transition: background 0.3s, transform 0.2s;
+  width: 150px;
+}
+
+@keyframes bounce{
+    0%,100%{
+transform: translateY(0);
+    }50%{
+        transform: translateY(-10px);
+    }
+}
+.button-container .start{
+    background-color: #028d2c;
+
+}
+.button-container .reset{
+    background-color: #ff391a;
+
+}
+.button-container .stop{
+    background-color: #ff1544;
+
+}
+.start:hover{
+    animation: bounce 0.5s;
+}
+.start:hover{
+    background-color: rgb(31, 31, 255);
+}
+.reset:hover{
+    animation: bounce 0.5s;
+}
+.stop:hover{
+    animation: bounce 0.5s;
+}
+.stop:hover{
+    background-color: rgb(255, 0, 170);
+}
+.reset:hover{
+    background-color: rgb(24, 190, 255);
+}
