@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    font-family: sans-serif;
+}
+
+.agecalculator{
+    text-align: center;
+}
+
+.heading{
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 50px;
+}
+
+.box{
+    background-color: #f5e084;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;   
+    border: 2px solid blue;
+    border-radius: 25px;
+    gap: 15px;
+}
+
+.hello{
+    height: 35px;
+    width: 200px;
+    border: 2px solid rgb(0, 185, 241);
+    border-radius: 15px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.bmw{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.result2{
+    background: #ffffff;
+    margin-top: 15px;
+    height: 35px;
+    width: 200px;
+    border-radius: 25px;
+    border: 2px solid rgb(21, 239, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.mick{
+    font-size: 18px;
+    color: #0079eb;
+    font-weight: bold;
+    margin: 0;
+}
+
+#meow{
+    height: 35px;
+    width: 100px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #fc106a;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+#meow:hover{
+    background-color: #0079eb;
+    color: white;
+}
